@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="meihuan2@172.20.15.211:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="meihuan2@172.20.15.211:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/meihuan2/document/VLP" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/demo" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="meihuan2@172.20.15.211:22 (2)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="xiaomin@124.193.223.50:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="xiaomin@124.193.223.50:22 (2)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
