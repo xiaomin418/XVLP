@@ -134,39 +134,58 @@ def soft_method(x):
 
 # merge all cand masks results
 ### 1. for training data
-cand_batch_textonly_files = [
-    '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_textonly1.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_textonly2.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_textonly3.pickle'
-]
-cand_batch_multimodal_files = [
-    '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_multimodal1.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_multimodal2.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_multimodal3.pickle'
-]
-textonly_merge_score = merge_batch(cand_batch_textonly_files)
-multimodal_merge_score = merge_batch(cand_batch_multimodal_files)
-image_contri_score = merge_contri_scores(multimodal_merge_score, textonly_merge_score)
-image_contri_path = '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/image_contri.pickle'
-with open(image_contri_path, 'wb') as f:
-    pickle.dump(image_contri_score, f)
-    f.close()
+# cand_batch_textonly_files = [
+#     '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_textonly1.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_textonly2.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_textonly3.pickle'
+# ]
+# cand_batch_multimodal_files = [
+#     '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_multimodal1.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_multimodal2.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/result_multimodal3.pickle'
+# ]
+# textonly_merge_score = merge_batch(cand_batch_textonly_files)
+# multimodal_merge_score = merge_batch(cand_batch_multimodal_files)
+# image_contri_score = merge_contri_scores(multimodal_merge_score, textonly_merge_score)
+# image_contri_path = '/data/meihuan2/dataset/SS_MLM/1227-trainnpy1/image_contri.pickle'
+# with open(image_contri_path, 'wb') as f:
+#     pickle.dump(image_contri_score, f)
+#     f.close()
 
 ### 2. for dev data
+# cand_batch_textonly_files = [
+#     '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_textonly1.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_textonly2.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_textonly3.pickle'
+# ]
+# cand_batch_multimodal_files = [
+#     '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_multimodal1.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_multimodal2.pickle',
+#     '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_multimodal3.pickle'
+# ]
+# textonly_merge_score = merge_batch(cand_batch_textonly_files)
+# multimodal_merge_score = merge_batch(cand_batch_multimodal_files)
+# image_contri_score = merge_contri_scores(multimodal_merge_score, textonly_merge_score)
+# image_contri_path = '/data/meihuan2/dataset/SS_MLM/1227-devnpy/image_contri.pickle'
+# with open(image_contri_path, 'wb') as f:
+#     pickle.dump(image_contri_score, f)
+#     f.close()
+
+### 3. for test data
 cand_batch_textonly_files = [
-    '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_textonly1.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_textonly2.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_textonly3.pickle'
+    '/data/meihuan2/dataset/SS_MLM/1227-testnpy/result_textonly1.pickle',
+    '/data/meihuan2/dataset/SS_MLM/1227-testnpy/result_textonly2.pickle',
+    '/data/meihuan2/dataset/SS_MLM/1227-testnpy/result_textonly3.pickle'
 ]
 cand_batch_multimodal_files = [
-    '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_multimodal1.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_multimodal2.pickle',
-    '/data/meihuan2/dataset/SS_MLM/1227-devnpy/result_multimodal3.pickle'
+    '/data/meihuan2/dataset/SS_MLM/1227-testnpy/result_multimodal1.pickle',
+    '/data/meihuan2/dataset/SS_MLM/1227-testnpy/result_multimodal2.pickle',
+    '/data/meihuan2/dataset/SS_MLM/1227-testnpy/result_multimodal3.pickle'
 ]
 textonly_merge_score = merge_batch(cand_batch_textonly_files)
 multimodal_merge_score = merge_batch(cand_batch_multimodal_files)
 image_contri_score = merge_contri_scores(multimodal_merge_score, textonly_merge_score)
-image_contri_path = '/data/meihuan2/dataset/SS_MLM/1227-devnpy/image_contri.pickle'
+image_contri_path = '/data/meihuan2/dataset/SS_MLM/1227-testnpy/image_contri.pickle'
 with open(image_contri_path, 'wb') as f:
     pickle.dump(image_contri_score, f)
     f.close()
